@@ -728,12 +728,10 @@ class Plugin():
             return False
 
         if p1_p.team == "red" and p2_p.team == "blue":
-            self.put(p1_p, "spectator")
             self.put(p2_p, "red")
             self.put(p1_p, "blue")
             return True
         elif p2_p.team == "red" and p1_p.team == "blue":    
-            self.put(p1_p, "spectator")
             self.put(p2_p, "blue")
             self.put(p1_p, "red")
             return True
